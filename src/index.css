@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* Range slider styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  height: 8px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 9999px;
+  background: #1e293b;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 6px;
+  border-radius: 9999px;
+  background: #1e293b;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #d946ef, #a855f7);
+  margin-top: -5px;
+  box-shadow: 0 0 10px rgba(217, 70, 239, 0.5);
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #d946ef, #a855f7);
+  border: none;
+  box-shadow: 0 0 10px rgba(217, 70, 239, 0.5);
+  cursor: pointer;
+}
+
+input[type="range"].accent-cyan-400::-webkit-slider-thumb {
+  background: linear-gradient(135deg, #22d3ee, #06b6d4);
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+}
+
+input[type="range"].accent-purple-400::-webkit-slider-thumb {
+  background: linear-gradient(135deg, #c084fc, #a855f7);
+  box-shadow: 0 0 10px rgba(192, 132, 252, 0.5);
+}
+
+input[type="range"].accent-amber-400::-webkit-slider-thumb {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+}
+
+input[type="range"].accent-indigo-400::-webkit-slider-thumb {
+  background: linear-gradient(135deg, #818cf8, #6366f1);
+  box-shadow: 0 0 10px rgba(129, 140, 248, 0.5);
+}
+
+html, body, #root {
+  background: #020617;
+  min-height: 100vh;
+}
+
